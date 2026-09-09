@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/Knowledge-Forge-AI/.github/security/policy
+    about: Do not disclose suspected vulnerabilities in a public issue. Follow the private reporting instructions in the security policy.
