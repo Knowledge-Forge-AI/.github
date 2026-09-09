@@ -7,7 +7,7 @@ body:
       value: |
         Thanks for taking the time to report a problem.
 
-        **Do not use this form for security vulnerabilities.** Follow the repository's Security policy or the Knowledge Forge AI organization [SECURITY.md](../../SECURITY.md) instead.
+        **Do not use this form for security vulnerabilities.** Follow the affected repository's Security policy or the Knowledge Forge AI organization policy at https://github.com/Knowledge-Forge-AI/.github/security/policy instead.
 
   - type: input
     id: version
