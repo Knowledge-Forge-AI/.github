@@ -1,0 +1,46 @@
+name: Documentation issue
+description: Report missing, incorrect, confusing, or outdated documentation
+title: "[Docs]: "
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Documentation location
+      description: Link to or identify the README, page, section, command help, example, or other documentation involved.
+      placeholder: URL, file path, heading, or command
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Documentation problem
+      description: What is incorrect, unclear, missing, misleading, or out of date?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Suggested improvement
+      description: Describe what the documentation should explain or show instead. Exact wording is optional.
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Include relevant versions, examples, screenshots, or related issues if useful. Remove secrets and unrelated private data.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submission checks
+      options:
+        - label: I searched existing issues for the same documentation problem.
+          required: true
+        - label: I will follow the applicable Knowledge Forge AI Code of Conduct.
+          required: true
