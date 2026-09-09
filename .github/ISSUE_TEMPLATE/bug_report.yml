@@ -1,0 +1,93 @@
+name: Bug report
+description: Report a reproducible defect or unexpected behavior
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem.
+
+        **Do not use this form for security vulnerabilities.** Follow the repository's Security policy or the Knowledge Forge AI organization [SECURITY.md](../../SECURITY.md) instead.
+
+  - type: input
+    id: version
+    attributes:
+      label: Version, release, or commit
+      description: Identify the affected release, package version, tag, or commit when known.
+      placeholder: e.g. v0.4.0, 1.2.3, or full commit SHA
+    validations:
+      required: false
+
+  - type: input
+    id: component
+    attributes:
+      label: Component
+      description: Which command, package, module, UI area, workflow, or subsystem is affected?
+      placeholder: e.g. CLI import, desktop preview, release packaging
+    validations:
+      required: false
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Problem summary
+      description: Describe what went wrong and the impact on normal use.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest reliable reproduction you can.
+      placeholder: |
+        1. Run ...
+        2. Configure ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead? Include concise errors or logs when useful.
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include relevant OS, architecture, runtime/toolchain versions, installation method, or execution environment.
+      placeholder: e.g. macOS 15 arm64; Node 22.x; npm package; local checkout
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add screenshots, logs, minimal fixtures, regression information, or related issues if helpful. Remove secrets and unrelated private data.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submission checks
+      options:
+        - label: I searched existing issues for the same problem.
+          required: true
+        - label: This report does not disclose a suspected security vulnerability or secret.
+          required: true
+        - label: I will follow the applicable Knowledge Forge AI Code of Conduct.
+          required: true
