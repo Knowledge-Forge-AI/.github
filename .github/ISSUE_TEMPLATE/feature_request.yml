@@ -1,0 +1,66 @@
+name: Feature request
+description: Propose a new capability or a meaningful improvement
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing an improvement. Please describe the problem or user need before prescribing an implementation so maintainers can evaluate alternatives.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What limitation, workflow problem, or unmet use case should this address?
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What should users be able to accomplish if this is implemented?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed approach
+      description: Describe a possible design or implementation if you have one. This is not required to be the final solution.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Note workarounds, competing designs, or reasons existing capabilities are insufficient.
+    validations:
+      required: false
+
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility and scope considerations
+      description: Call out relevant API, CLI, file-format, platform, migration, security, performance, or backward-compatibility implications.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add examples, mockups, links, measurements, or related issues when useful.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submission checks
+      options:
+        - label: I searched existing issues and proposals for substantially the same request.
+          required: true
+        - label: I will follow the applicable Knowledge Forge AI Code of Conduct.
+          required: true
