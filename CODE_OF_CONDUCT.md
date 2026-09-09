@@ -63,11 +63,11 @@ Maintainers may skip intermediate steps when the circumstances warrant it. Repor
 
 These enforcement guidelines do not limit GitHub's own terms, moderation, abuse-reporting systems, or enforcement authority.
 
-## Attribution
+## Attribution and License
 
-This Code of Conduct is adapted from **Contributor Covenant 3.0**, stewarded by the Organization for Ethical Source and licensed under CC BY-SA 4.0:
+This Code of Conduct is adapted from **Contributor Covenant 3.0**, stewarded by the Organization for Ethical Source:
 
 - https://www.contributor-covenant.org/version/3/0/
 - https://creativecommons.org/licenses/by-sa/4.0/
 
-Knowledge Forge AI's organization-specific adaptation is provided under the licensing terms applicable to this repository, subject to the Contributor Covenant attribution and share-alike requirements above.
+The Contributor Covenant source and this adapted Code of Conduct are licensed under **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)**. The remainder of this repository is governed by its separately stated licensing terms.
