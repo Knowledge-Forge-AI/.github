@@ -1,110 +1,108 @@
 # Knowledge Forge AI
 
-Knowledge Forge AI builds deterministic, inspectable tools for agent engineering and human-reviewable software and design workflows.
+Knowledge Forge AI builds deterministic, inspectable tools for agent engineering and human-reviewable software, design, and environment workflows.
 
-Our public work currently centers on two complementary areas:
+Our public projects cover reusable coding-agent skills, repository intelligence, visual design systems, software distribution, declarative macOS workstations, and foundations for disposable test environments.
 
-- **Agent engineering** — bounded, provider-neutral tooling for skills, evidence, environment capture, repository analysis, and reproducible agent workflows.
-- **Theme Forge** — deterministic tooling for vector assets, brand systems, documentation themes, and local visual-design workbenches.
+**[Join the community discussions](https://github.com/orgs/Knowledge-Forge-AI/discussions)** · **[Visit the website](https://www.knowledge-forge.ai)** · **[Browse all repositories](https://github.com/orgs/Knowledge-Forge-AI/repositories)**
 
 > Project-specific READMEs, release notes, licenses, and contribution files are the source of truth for each repository's current maturity, compatibility, distribution, licensing, and contribution requirements.
 
-## Table of contents
+## Contents
 
-### Public projects and repositories
-
-1. [Agentic Praxis Grimoire](#agentic-praxis-grimoire)
-2. [Theme Forge Stellar Burst](#theme-forge-stellar-burst)
-3. [Theme Forge Nebular Fusion](#theme-forge-nebular-fusion)
-4. [Theme Forge Stellar Loom](#theme-forge-stellar-loom)
-5. [Starlight Theme Terminal Nova](#starlight-theme-terminal-nova)
-6. [Knowledge Forge AI Website](#knowledge-forge-ai-website)
-7. [Organization Community Health](#organization-community-health)
-
-### About Knowledge Forge AI
-
+- [Community and feedback](#community-and-feedback)
+- [Agent engineering and repository intelligence](#agent-engineering-and-repository-intelligence)
+- [Theme Forge](#theme-forge)
+- [Workstations and virtual-machine foundations](#workstations-and-virtual-machine-foundations)
+- [Release and package distribution](#release-and-package-distribution)
+- [Websites and community resources](#websites-and-community-resources)
 - [How the projects fit together](#how-the-projects-fit-together)
 - [Project status](#project-status)
 - [Licensing model](#licensing-model)
 - [Contributing](#contributing)
 
-## Public projects and repositories
+## Community and feedback
 
-### Agentic Praxis Grimoire
+[Knowledge Forge AI Discussions](https://github.com/orgs/Knowledge-Forge-AI/discussions) is the shared forum for questions, ideas, first-use feedback, design conversations, and examples from across our public projects.
 
-**Repository:** [Knowledge-Forge-AI/agentic-praxis-grimoire](https://github.com/Knowledge-Forge-AI/agentic-praxis-grimoire)
+Tell us what you are trying to accomplish, where you got stuck, or what you would like to make easier. A short question, screenshot, workflow example, or account of your first few minutes with a tool can help improve the projects.
 
-Agentic Praxis Grimoire (APGR) is a provider-neutral toolkit and skill corpus for bounded agent engineering. It supplies deterministic primitives for task-scoped skill selection, evidence capture, curated environment snapshots, repository analysis, and context-footprint accounting without imposing a particular orchestration system.
+- **Ask and explore:** discuss a use case, propose an improvement, or ask how projects fit together.
+- **Try and report:** share installation experiences, confusing instructions, or feedback on a particular release or preview.
+- **Show and tell:** share a theme, documentation site, integration, or agent workflow.
+- **Track concrete work:** use the relevant project's issue tracker for reproducible bugs and agreed improvements, and link related discussions.
 
-APGR is intended to be consumed by coding-agent platforms, LLM harnesses, agentic workflows, and orchestrators rather than acting as an autonomous agent itself.
+Include the project name in your discussion title when it concerns a specific tool. Please follow our [Code of Conduct](https://github.com/Knowledge-Forge-AI/.github/blob/main/CODE_OF_CONDUCT.md) and the applicable repository's contribution guidance.
 
-### Theme Forge Stellar Burst
+## Agent engineering and repository intelligence
 
-**Repository:** [Knowledge-Forge-AI/theme-forge-stellar-burst](https://github.com/Knowledge-Forge-AI/theme-forge-stellar-burst)
+| Project | Purpose |
+| --- | --- |
+| [**Agentic Praxis Grimoire (APGR)**](https://github.com/Knowledge-Forge-AI/agentic-praxis-grimoire) | A provider-neutral toolkit and skill corpus for bounded agent engineering. It provides task-scoped guidance, evidence capture, curated environment snapshots, structural repository analysis, context-footprint accounting, and a single-phase dispatcher for use by coding-agent platforms and harnesses. |
+| [**RepoMap**](https://github.com/Knowledge-Forge-AI/repo-map) | A deterministic knowledge graph system for polyglot repositories. It connects entry points, scripts, imports, generated artifacts, tests, and environment contracts to source evidence, including behavior that crosses language boundaries. Its current reference distribution uses containerized PostgreSQL. |
 
-Theme Forge Stellar Burst (TFSB) is a deterministic declarative SVG compiler, transactional installer, and lifecycle drift checker. It turns a bounded SVG subset into human-editable TOML, compiles canonical SVG output, distributes assets to configured destinations, and helps reconcile upstream changes without silently overwriting human edits.
+APGR supplies reusable engineering primitives that callers compose into their own workflows. RepoMap develops repository intelligence with a documented Local, Server Engine, and Cloud product direction; SQLite Local, host-native MCP, and managed Cloud remain development targets.
 
-### Theme Forge Nebular Fusion
+## Theme Forge
 
-**Repository:** [Knowledge-Forge-AI/theme-forge-nebular-fusion](https://github.com/Knowledge-Forge-AI/theme-forge-nebular-fusion)
+Theme Forge separates reusable asset and theme engines, a desktop workbench, and independently distributed themes.
 
-Theme Forge Nebular Fusion is a local desktop workbench for reviewing, inspecting, and managing Theme Forge brand systems and artifacts. It provides the visual workbench layer around deterministic Theme Forge components while keeping project state and evidence inspectable.
+| Project | Purpose |
+| --- | --- |
+| [**Stellar Burst**](https://github.com/Knowledge-Forge-AI/theme-forge-stellar-burst) | A declarative SVG compiler and asset lifecycle toolkit. It converts a bounded SVG subset into editable TOML, produces deterministic SVG, installs assets into configured destinations, and detects or reconciles upstream and local changes. |
+| [**Stellar Loom**](https://github.com/Knowledge-Forge-AI/theme-forge-stellar-loom) | A theme compiler, library, and CLI for Astro Starlight documentation sites. It produces CSS, theme descriptors, and installable theme packages from typed specifications, with contrast diagnostics and configurable documentation layouts. |
+| [**Solar Sail**](https://github.com/Knowledge-Forge-AI/theme-forge-solar-sail) | A theme compiler, library, and CLI for Tailwind CSS v4 and shadcn/ui applications. It generates light and dark CSS tokens and standalone theme packages, complementing Stellar Loom's documentation focus. |
+| [**Nebular Fusion**](https://github.com/Knowledge-Forge-AI/theme-forge-nebular-fusion) | A Tauri desktop workbench bringing together the Burst, Loom, and Solar engines for reviewing and managing brand systems and artifacts. Current source-build work targets Apple silicon macOS and Linux ARM64/AMD64; native builds and installed application behavior remain under qualification. |
+| [**Starlight Theme Terminal Nova**](https://github.com/Knowledge-Forge-AI/starlight-theme-terminal-nova) | An independent Astro Starlight documentation theme built with Stellar Loom. It is both a concrete Theme Forge output and a theme package with its own presentation and distribution. |
 
-### Theme Forge Stellar Loom
+See each project's README and release notes for supported inputs, integration details, and installation methods.
 
-**Repository:** [Knowledge-Forge-AI/theme-forge-stellar-loom](https://github.com/Knowledge-Forge-AI/theme-forge-stellar-loom)
+## Workstations and virtual-machine foundations
 
-Theme Forge Stellar Loom (TFSL) is a Starlight theme-builder backend, library, and CLI. It compiles typed, versioned theme specifications into deterministic CSS custom properties, theme descriptors, and installable Starlight theme packages, with validation and contrast diagnostics built into the workflow.
+| Project | Purpose and current scope |
+| --- | --- |
+| [**Darwin Is Not a Snowflake (DINAS)**](https://github.com/Knowledge-Forge-AI/darwin-is-not-a-snowflake) | A modular macOS workstation framework built on nix-darwin. Core supplies bootstrap tooling, shared packages, configuration projection, and qualification and attended deployment machinery; domain adapters contribute through explicit contracts. The public preview targets Apple silicon macOS. |
+| [**DINAS Composition**](https://github.com/Knowledge-Forge-AI/composition_dinas) | The composition layer assembling DINAS Core and an explicit registry of adapters, modules, overlays, commands, configuration, application ownership, and qualification checks. The public preview still references adapters whose source has not yet been published, so a public clone alone cannot build the full composition. |
+| [**DINAS Browser UX**](https://github.com/Knowledge-Forge-AI/browser-ux_dinas) | An experimental DINAS adapter for declarative browser policies, browser-role and credential-provider contracts, convenience commands, and scrollbar presentation. Its public source preview requires a compatible nix-darwin composition; browser-extension packaging remains separate work. |
+| [**Ephemeral Snowflake Artificer (ESA)**](https://github.com/Knowledge-Forge-AI/ephemeral-snowflake-artificer) | A foundation for reusable VM image seeds that consumers can clone into disposable job and test environments. The public implementation provides a versioned manifest and consumption contract, a Python validation CLI, and synthetic examples. NixOS and macOS image-building backends are planned. |
 
-### Starlight Theme Terminal Nova
+DINAS covers workstation configuration and composition. ESA develops a separate image contract and validation foundation; its current public source does not yet provide qualified VM images or an operational DINAS integration.
 
-**Repository:** [Knowledge-Forge-AI/starlight-theme-terminal-nova](https://github.com/Knowledge-Forge-AI/starlight-theme-terminal-nova)
+## Release and package distribution
 
-Starlight Theme Terminal Nova is an independent Starlight documentation theme generated with Theme Forge Stellar Loom. It serves both as a usable theme package and as a concrete public output of the Stellar Loom theme-generation pipeline.
+| Repository | Role |
+| --- | --- |
+| [**Release Starport 9 (RS9)**](https://github.com/Knowledge-Forge-AI/release-starport-9) | Publication infrastructure under development to consume authoritative project releases, verify identity and provenance, and handle downstream packaging and publication. Projects remain responsible for their own source releases; supported publication routes are being qualified separately. |
+| [**Theme Forge Packages**](https://github.com/Knowledge-Forge-AI/theme-forge-packages) | Distribution infrastructure and installation guidance for the Theme Forge family, including Nix, Arch/pacman, Fedora/RPM, and prepared AUR recipes. Check the repository and project releases for current availability and platform qualification. |
+| [**Knowledge Forge AI Homebrew tap**](https://github.com/Knowledge-Forge-AI/homebrew-tap) | Homebrew formulae for Knowledge Forge AI tools, including APGR and Theme Forge. Available versions, installation methods, and supported platforms are documented per formula. |
 
-### Knowledge Forge AI Website
+These repositories serve different distribution roles. A planned RS9 destination does not establish that a package is available there; use the installation route documented for the specific project and release.
 
-**Repository:** [Knowledge-Forge-AI/Knowledge-Forge-AI.github.io](https://github.com/Knowledge-Forge-AI/Knowledge-Forge-AI.github.io)
+## Websites and community resources
 
-Source for the Knowledge Forge AI public website and documentation presence, built with Astro and Starlight.
-
-### Organization Community Health
-
-**Repository:** [Knowledge-Forge-AI/.github](https://github.com/Knowledge-Forge-AI/.github)
-
-Organization profile and default community-health files used by Knowledge Forge AI repositories that do not provide repository-local replacements.
+| Repository | Role |
+| --- | --- |
+| [**Knowledge Forge AI website**](https://github.com/Knowledge-Forge-AI/Knowledge-Forge-AI.github.io) | Source for the public organization website and documentation presence, built with Astro and Starlight. |
+| [**Sam Lair website**](https://github.com/Knowledge-Forge-AI/samlair.knowledge-forge.ai) | Astro and Starlight source for Sam Lair's personal site. |
+| [**Organization profile and community resources**](https://github.com/Knowledge-Forge-AI/.github) | This organization profile and default community-health files. Join the shared forum through [organization Discussions](https://github.com/orgs/Knowledge-Forge-AI/discussions). Repository-local community files take precedence over applicable defaults. |
 
 ## How the projects fit together
 
-The public repositories are intentionally composable rather than one monolithic platform.
+| Area | Relationship |
+| --- | --- |
+| Agent engineering | APGR supplies reusable skills and deterministic workflow primitives; RepoMap develops source-grounded repository intelligence. Each can be evaluated and consumed on its own terms. |
+| Design systems | Burst handles SVG assets, Loom handles Starlight themes, and Solar handles Tailwind/shadcn theme tokens. Nebular brings these engines into a desktop workbench; Terminal Nova is an independently distributed Loom-generated theme. |
+| Workstation configuration | DINAS Core provides shared workstation machinery, Composition assembles adapters, and Browser UX is one domain adapter. |
+| Disposable test environments | ESA is developing VM-image contracts and validation, with image-building backends still planned. |
+| Distribution | Project releases remain authoritative. The Homebrew tap and Theme Forge Packages provide distribution surfaces, while RS9 develops shared downstream publication machinery. |
 
-```text
-Agent engineering
-└── Agentic Praxis Grimoire
-
-Theme Forge
-├── Stellar Burst
-│   └── deterministic SVG and asset lifecycle tooling
-├── Stellar Loom
-│   └── deterministic Starlight theme generation
-├── Nebular Fusion
-│   └── local visual workbench integrating Theme Forge capabilities
-└── Starlight Theme Terminal Nova
-    └── generated theme and reference output from Stellar Loom
-
-Organization presence
-├── Knowledge-Forge-AI.github.io
-└── .github
-    └── organization profile and default community-health policy
-```
-
-This separation keeps reusable engines, desktop tooling, generated artifacts, organization documentation, and community policy independently versioned and independently consumable.
+The repositories are independently versioned. Sharing an organization or a planned integration does not imply that every component is required to use every other component.
 
 ## Project status
 
-Knowledge Forge AI is actively developing these projects. Some repositories may represent release candidates, pre-release tooling, or components whose public packaging is still being qualified.
+Public work spans released components, early pilots, source previews, and foundations still under development. Availability and qualification can differ between operating systems, architectures, package managers, and releases.
 
-For authoritative project status, consult the repository README, release notes, tags, and published artifacts rather than assuming that every public repository is a stable release.
+For a usable starting point, consult the project's README, release notes, tags, and published artifacts. When reporting an experience in Discussions, include the project, version or source revision, and installation method so others can understand the result.
 
 ## Licensing model
 
@@ -114,7 +112,7 @@ The AGPL permits commercial use subject to its terms. A separate commercial lice
 
 Licensing is ultimately defined **per repository**. Always consult the applicable project's `LICENSE`, `NOTICE`, `COMMERCIAL-LICENSE.md`, third-party notices, and other licensing files before redistribution or integration. Repository-specific terms control if they differ from this organization-level summary.
 
-For commercial licensing inquiries, contact **lair001@gmail.com**.
+For commercial licensing inquiries, contact **sam.lair@knowledge-forge.ai**.
 
 ## Contributing
 
@@ -140,4 +138,5 @@ A `Signed-off-by` line does not replace that explicit acknowledgment. If a repos
 ---
 
 **Website:** [knowledge-forge.ai](https://www.knowledge-forge.ai)  
-**GitHub:** [Knowledge-Forge-AI](https://github.com/Knowledge-Forge-AI)
+**GitHub:** [Knowledge-Forge-AI](https://github.com/Knowledge-Forge-AI)  
+**Discussions:** [Join the conversation](https://github.com/orgs/Knowledge-Forge-AI/discussions)
