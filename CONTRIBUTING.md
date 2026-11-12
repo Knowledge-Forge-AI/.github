@@ -55,4 +55,4 @@ Individual projects define their own technical, testing, documentation, compatib
 
 Knowledge Forge AI generally uses `AGPL-3.0-or-later` as its community software license with separate commercial licensing available where a project states so. See the target repository's licensing files for authoritative terms.
 
-Questions about commercial licensing or contribution terms can be sent to **lair001@gmail.com**.
+Questions about commercial licensing or contribution terms can be sent to **sam.lair@knowledge-forge.ai**.

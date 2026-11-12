@@ -32,4 +32,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) and [CLA.md](CLA.md) for the organization
 
 ## Contact
 
-For commercial licensing inquiries, contact **lair001@gmail.com**.
+For commercial licensing inquiries, contact **sam.lair@knowledge-forge.ai**.
