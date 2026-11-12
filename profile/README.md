@@ -20,7 +20,7 @@ she brings a woodland perspective to the forge.
 
 | Project | Start here |
 | --- | --- |
-| **[Agentic Praxis Grimoire](https://www.knowledge-forge.ai/agentic-praxis-grimoire/)** | Provider-neutral tools and skills for bounded agent engineering. Meet Shiori, APGR’s grimoire-obsessed high elf. [Source](https://github.com/Knowledge-Forge-AI/agentic-praxis-grimoire). |
+| **[Agentic Praxis Grimoire](https://www.knowledge-forge.ai/apgr/)** | Provider-neutral tools and skills for bounded agent engineering. Meet Shiori, APGR’s grimoire-obsessed high elf. [Source](https://github.com/Knowledge-Forge-AI/agentic-praxis-grimoire). |
 | **[RepoMap → Common Lore Index (CLOE)](https://github.com/Knowledge-Forge-AI/repo-map)** | Deterministic, evidence-linked knowledge graphs for repositories. The rebrand is in progress; current repository and CLI identities remain RepoMap. |
 
 DINAS was the original inspiration for RepoMap: understanding a complex workstation

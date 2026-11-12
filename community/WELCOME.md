@@ -15,7 +15,7 @@ want to understand, what surprised you, or what could be easier.
 
 ## Find your corner of the forge
 
-- **Agent engineering:** [APGR](https://www.knowledge-forge.ai/agentic-praxis-grimoire/)
+- **Agent engineering:** [APGR](https://www.knowledge-forge.ai/apgr/)
   supplies bounded engineering primitives and skills.
 - **Repository understanding:** [RepoMap, rebranding toward CLOE](https://github.com/Knowledge-Forge-AI/repo-map),
   develops evidence-linked repository knowledge graphs. [DINAS originally inspired
