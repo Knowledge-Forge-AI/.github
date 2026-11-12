@@ -50,4 +50,4 @@ If a repository provides its own `CLA.md` or pull request template, use the exac
 
 ## Contact
 
-Questions about contribution terms or commercial licensing can be sent to **lair001@gmail.com**.
+Questions about contribution terms or commercial licensing can be sent to **sam.lair@knowledge-forge.ai**.
